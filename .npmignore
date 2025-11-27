@@ -1,0 +1,19 @@
+# Development files
+node_modules/
+.git/
+.gitignore
+
+# Demo files (users can see these on GitHub)
+demo/
+
+# Development configs
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
