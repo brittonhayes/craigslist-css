@@ -159,7 +159,7 @@ html,
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -560,16 +560,16 @@ video {
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.4;
-  color: #000000;
+  color: #222;
   background-color: #ffffff;
 }
 
 a {
-  color: #0000ff;
-  text-decoration: underline;
+  color: #00e;
+  text-decoration: none;
 }
 
 a:visited {
@@ -615,7 +615,7 @@ table {
 th, td {
   padding: 8px;
   text-align: left;
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid #ccc;
 }
 
 th {
@@ -639,7 +639,7 @@ button,
 /* Classic focus states */
 
 *:focus {
-  outline-color: #0000ff;
+  outline-color: #00e;
 }
 
 /* Disable smooth scrolling for that instant 90s feel */
@@ -685,7 +685,8 @@ html {
 .cl-button {
   padding: 4px 12px;
   background-color: #f7f7f7;
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
+  border-radius: 3px;
   font-size: 12px;
   cursor: pointer;
   text-decoration: none;
@@ -693,37 +694,48 @@ html {
 }
 
 .cl-button:hover {
-  background-color: #eeeeee;
+  border-color: #999;
+  background-color: #eee;
 }
 
 .cl-input {
-  padding: 4px;
-  border: 1px solid #cccccc;
+  padding: undefined 4px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
   font-size: 12px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   width: 100%;
 }
 
+.cl-input:hover {
+  border-color: #999;
+}
+
 .cl-input:focus {
-  outline: 2px solid #0000ff;
+  outline: 2px solid #00e;
   outline-offset: 0;
 }
 
 .cl-select {
-  padding: 4px;
-  border: 1px solid #cccccc;
+  padding: undefined 4px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
   font-size: 12px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   background-color: #ffffff;
 }
 
+.cl-select:hover {
+  border-color: #999;
+}
+
 .cl-select:focus {
-  outline: 2px solid #0000ff;
+  outline: 2px solid #00e;
   outline-offset: 0;
 }
 
 .cl-card {
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   padding: 12px;
   margin-bottom: 8px;
   background-color: #ffffff;
@@ -732,7 +744,7 @@ html {
 .cl-section {
   margin-bottom: 20px;
   padding-bottom: 12px;
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid #ccc;
 }
 
 .cl-list {
@@ -747,7 +759,7 @@ html {
 }
 
 .cl-link {
-  color: #0000ff;
+  color: #00e;
   text-decoration: underline;
 }
 
@@ -762,16 +774,16 @@ html {
 .cl-header {
   background-color: #f7f7f7;
   padding: 8px;
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid #ccc;
   margin-bottom: 16px;
 }
 
 .cl-footer {
-  border-top: 1px solid #cccccc;
+  border-top: 1px solid #ccc;
   padding-top: 12px;
   margin-top: 24px;
   font-size: 12px;
-  color: #999999;
+  color: #999;
 }
 
 .cl-table {
@@ -784,13 +796,48 @@ html {
   background-color: #f7f7f7;
   padding: 8px;
   text-align: left;
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid #ccc;
   font-weight: 700;
 }
 
 .cl-table td {
   padding: 8px;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #eee;
+}
+
+.cl-buttongroup .button {
+  display: inline-block;
+  border-left: 1px solid #e0e0e0;
+  padding: 0 8px;
+  height: 100%;
+}
+
+.cl-buttongroup .button:first-child {
+  border-left: 0;
+}
+
+.cl-buttongroup .button.sel {
+  color: #ffffff;
+  background-color: #5252ff;
+  cursor: text;
+}
+
+.cl-alert {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+.cl-alert-error {
+  background-color: #ffffff;
+  border: 1px solid #fbb;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+.cl-alert-success {
+  background-color: #ffffff;
+  border: 1px solid #090;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
 /* Classic posting list */
@@ -806,15 +853,20 @@ html {
 }
 
 .cl-search-input {
-  padding: 4px;
-  border: 1px solid #cccccc;
+  padding: undefined 4px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
   font-size: 12px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   width: 100%;
 }
 
+.cl-search-input:hover {
+  border-color: #999;
+}
+
 .cl-search-input:focus {
-  outline: 2px solid #0000ff;
+  outline: 2px solid #00e;
   outline-offset: 0;
 }
 
@@ -825,7 +877,8 @@ html {
 .cl-search-button {
   padding: 4px 12px;
   background-color: #f7f7f7;
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
+  border-radius: 3px;
   font-size: 12px;
   cursor: pointer;
   text-decoration: none;
@@ -833,7 +886,8 @@ html {
 }
 
 .cl-search-button:hover {
-  background-color: #eeeeee;
+  border-color: #999;
+  background-color: #eee;
 }
 
 /* Breadcrumb navigation */
@@ -844,7 +898,7 @@ html {
 }
 
 .cl-breadcrumb a {
-  color: #0000ff;
+  color: #00e;
   text-decoration: underline;
 }
 
@@ -877,6 +931,9 @@ html {
 }
 
 .cl-alert-error {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   margin-bottom: 12px;
   border-width: 1px;
   border-color: rgb(204 204 204 / var(--tw-border-opacity, 1));
@@ -892,6 +949,9 @@ html {
 }
 
 .cl-alert-success {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   margin-bottom: 12px;
   border-width: 1px;
   border-color: rgb(204 204 204 / var(--tw-border-opacity, 1));
@@ -899,11 +959,11 @@ html {
   padding: 8px;
   font-size: 12px;
   --tw-border-opacity: 1;
-  border-color: rgb(0 128 0 / var(--tw-border-opacity, 1));
+  border-color: rgb(0 153 0 / var(--tw-border-opacity, 1));
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
   --tw-text-opacity: 1;
-  color: rgb(0 128 0 / var(--tw-text-opacity, 1));
+  color: rgb(0 153 0 / var(--tw-text-opacity, 1));
 }
 
 .mb-1 {
@@ -951,7 +1011,7 @@ html {
 }
 
 .rounded {
-  border-radius: 0;
+  border-radius: 3px;
 }
 
 .bg-cl-gray-light {
@@ -989,7 +1049,7 @@ html {
 
 .text-cl-blue {
   --tw-text-opacity: 1;
-  color: rgb(0 0 255 / var(--tw-text-opacity, 1));
+  color: rgb(0 0 238 / var(--tw-text-opacity, 1));
 }
 
 .text-cl-gray-dark {
