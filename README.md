@@ -1,8 +1,6 @@
 # craigslist-css
 
-A Tailwind CSS theme that captures the Craigslist aesthetic.
-
-No fancy gradients, no smooth animations, no rounded corners. Just pure, functional web design.
+A Tailwind CSS theme that captures the classic Craigslist aesthetic - simple, functional, and straightforward.
 
 ## Live Demo
 
@@ -48,7 +46,7 @@ Include in your HTML:
 </head>
 <body>
     <div class="cl-header">
-        <h1>Welcome to the Past</h1>
+        <h1>My Site</h1>
     </div>
 
     <div class="cl-card">
@@ -194,14 +192,13 @@ All standard Tailwind utilities work, but with Craigslist-themed values:
 
 ## Design Principles
 
-This theme follows the core principles that made Craigslist a design icon:
+This theme follows Craigslist's minimalist approach:
 
-1. Function over form - Every element serves a purpose
-2. No unnecessary decoration - If it doesn't help users, it doesn't exist
-3. Dense information display - Screen space is valuable
-4. Instant feedback - No loading spinners, no smooth transitions
-5. Accessible colors - High contrast, clear visual hierarchy
-6. Familiar patterns - Users know exactly what to expect
+1. Function-focused - Minimal decoration
+2. Dense information display
+3. Fast interactions - No transitions or animations
+4. High contrast colors
+5. Familiar patterns
 
 ## Customization
 
@@ -257,13 +254,13 @@ Perfect for:
 
 ## Philosophy
 
-In a world of over-designed, JavaScript-heavy, CPU-melting web applications, sometimes you just want a simple page that loads instantly and gets out of your way. This theme is for people who remember when the web was about content, not animations.
+A simple, fast-loading alternative to more complex design systems.
 
 ## Contributing
 
-Found a way to make it even more utilitarian? Check out CONTRIBUTING.md for details on setting up your development environment and submitting pull requests.
+Check out CONTRIBUTING.md for details on setting up your development environment and submitting pull requests.
 
-All contributions should maintain the minimalist, utilitarian aesthetic that makes Craigslist iconic.
+Please maintain the minimalist aesthetic when contributing.
 
 ## License
 
@@ -271,29 +268,21 @@ MIT License - Use it however you want
 
 ## Credits
 
-Inspired by the timeless design of Craigslist.org, a website that has remained functionally perfect since 1995.
+Inspired by the design of Craigslist.org.
 
-Note: This project is not affiliated with or endorsed by Craigslist. It's a loving tribute to their iconic design aesthetic.
+Note: This project is not affiliated with or endorsed by Craigslist.
 
 ## FAQ
 
-Q: Is this serious?
-A: Absolutely. There's beauty in simplicity.
+**Can I use this in production?**
+Yes, it's a fully functional Tailwind theme.
 
-Q: Can I use this in production?
-A: Why not? Craigslist has been using a similar design for decades and it's one of the most successful websites ever.
+**What about dark mode?**
+Not included by default, but you can extend the theme to add it.
 
-Q: What about dark mode?
-A: Dark mode is a modern luxury. But if you must, you can extend the theme yourself.
-
-Q: Why no animations?
-A: They slow things down. We're here for information, not entertainment.
-
-Q: Can I add rounded corners?
-A: You can, but why would you want to?
+**Can I customize the colors?**
+Yes, edit the color values in tailwind.config.js.
 
 ---
 
 Made by Britton Hayes (https://github.com/brittonhayes)
-
-"Don't fix what isn't broken." - Craig Newmark (probably)
