@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>craigslist-css demo - san francisco bay area</title>
+    <link href="./dist/output.css" rel="stylesheet">
+    <style>
+        /* Additional demo-specific styles */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cl-header">
+        <div class="container">
+            <h1 class="text-2xl font-bold mb-2">craigslist-css demo</h1>
+            <p class="text-sm">
+                <a href="#" class="cl-link">SF bay area</a> &gt;
+                <a href="#" class="cl-link">san francisco</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Search Bar -->
+        <div class="cl-search-bar">
+            <input type="text" class="cl-search-input" placeholder="search craigslist">
+            <select class="cl-select">
+                <option>all for sale / wanted</option>
+                <option>housing</option>
+                <option>jobs</option>
+                <option>services</option>
+            </select>
+            <button class="cl-search-button">search</button>
+        </div>
+
+        <!-- Alert Example -->
+        <div class="cl-alert-success">
+            ✓ Your posting has been published successfully!
+        </div>
+
+        <div class="flex gap-6">
+            <!-- Left Column - Categories -->
+            <div style="flex: 0 0 300px;">
+                <div class="cl-section">
+                    <h2 class="text-lg font-bold mb-2">community</h2>
+                    <ul class="cl-list text-sm">
+                        <li><a href="#" class="cl-link">activities</a></li>
+                        <li><a href="#" class="cl-link">artists</a></li>
+                        <li><a href="#" class="cl-link">childcare</a></li>
+                        <li><a href="#" class="cl-link">classes</a></li>
+                        <li><a href="#" class="cl-link">events</a></li>
+                        <li><a href="#" class="cl-link">general</a></li>
+                        <li><a href="#" class="cl-link">groups</a></li>
+                        <li><a href="#" class="cl-link">local news</a></li>
+                        <li><a href="#" class="cl-link">lost+found</a></li>
+                        <li><a href="#" class="cl-link">missed connections</a></li>
+                        <li><a href="#" class="cl-link">musicians</a></li>
+                        <li><a href="#" class="cl-link">pets</a></li>
+                        <li><a href="#" class="cl-link">politics</a></li>
+                        <li><a href="#" class="cl-link">rants & raves</a></li>
+                        <li><a href="#" class="cl-link">rideshare</a></li>
+                        <li><a href="#" class="cl-link">volunteers</a></li>
+                    </ul>
+                </div>
+
+                <div class="cl-section">
+                    <h2 class="text-lg font-bold mb-2">housing</h2>
+                    <ul class="cl-list text-sm">
+                        <li><a href="#" class="cl-link">apts / housing</a></li>
+                        <li><a href="#" class="cl-link">housing swap</a></li>
+                        <li><a href="#" class="cl-link">housing wanted</a></li>
+                        <li><a href="#" class="cl-link">office / commercial</a></li>
+                        <li><a href="#" class="cl-link">parking / storage</a></li>
+                        <li><a href="#" class="cl-link">real estate for sale</a></li>
+                        <li><a href="#" class="cl-link">rooms / shared</a></li>
+                        <li><a href="#" class="cl-link">sublets / temporary</a></li>
+                        <li><a href="#" class="cl-link">vacation rentals</a></li>
+                    </ul>
+                </div>
+
+                <div class="cl-section">
+                    <h2 class="text-lg font-bold mb-2">for sale</h2>
+                    <ul class="cl-list text-sm">
+                        <li><a href="#" class="cl-link">antiques</a></li>
+                        <li><a href="#" class="cl-link">appliances</a></li>
+                        <li><a href="#" class="cl-link">arts+crafts</a></li>
+                        <li><a href="#" class="cl-link">atvs/utvs/snow</a></li>
+                        <li><a href="#" class="cl-link">auto parts</a></li>
+                        <li><a href="#" class="cl-link">bicycles</a></li>
+                        <li><a href="#" class="cl-link">boats</a></li>
+                        <li><a href="#" class="cl-link">books</a></li>
+                        <li><a href="#" class="cl-link">business</a></li>
+                        <li><a href="#" class="cl-link">cars+trucks</a></li>
+                        <li><a href="#" class="cl-link">cds/dvd/vhs</a></li>
+                        <li><a href="#" class="cl-link">cell phones</a></li>
+                        <li><a href="#" class="cl-link">clothes+acc</a></li>
+                        <li><a href="#" class="cl-link">collectibles</a></li>
+                        <li><a href="#" class="cl-link">computers</a></li>
+                        <li><a href="#" class="cl-link">electronics</a></li>
+                        <li><a href="#" class="cl-link">farm+garden</a></li>
+                        <li><a href="#" class="cl-link">free</a></li>
+                        <li><a href="#" class="cl-link">furniture</a></li>
+                        <li><a href="#" class="cl-link">garage sale</a></li>
+                        <li><a href="#" class="cl-link">general</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Right Column - Listings -->
+            <div style="flex: 1;">
+                <div class="cl-breadcrumb">
+                    <a href="#">craigslist</a>
+                    <span>&gt;</span>
+                    <a href="#">san francisco</a>
+                    <span>&gt;</span>
+                    <span>for sale</span>
+                </div>
+
+                <h2 class="text-xl font-bold mb-3">Recent Postings - For Sale</h2>
+
+                <!-- Sample Listings Table -->
+                <table class="cl-table mb-6">
+                    <thead>
+                        <tr>
+                            <th>date</th>
+                            <th>title</th>
+                            <th>price</th>
+                            <th>pic</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-cl-small">Nov 27</td>
+                            <td><a href="#" class="cl-link">vintage oak dining table with 6 chairs</a></td>
+                            <td>$400</td>
+                            <td class="text-cl-small">📷</td>
+                        </tr>
+                        <tr>
+                            <td class="text-cl-small">Nov 27</td>
+                            <td><a href="#" class="cl-link">2015 macbook pro 15" - excellent condition</a></td>
+                            <td>$650</td>
+                            <td class="text-cl-small">📷</td>
+                        </tr>
+                        <tr>
+                            <td class="text-cl-small">Nov 27</td>
+                            <td><a href="#" class="cl-link">moving sale - everything must go!</a></td>
+                            <td>$1</td>
+                            <td class="text-cl-small">📷</td>
+                        </tr>
+                        <tr>
+                            <td class="text-cl-small">Nov 26</td>
+                            <td><a href="#" class="cl-link">vintage guitar amplifier fender twin reverb</a></td>
+                            <td>$1200</td>
+                            <td class="text-cl-small">📷</td>
+                        </tr>
+                        <tr>
+                            <td class="text-cl-small">Nov 26</td>
+                            <td><a href="#" class="cl-link">ikea sofa - barely used, pet free home</a></td>
+                            <td>$200</td>
+                            <td class="text-cl-small"></td>
+                        </tr>
+                        <tr>
+                            <td class="text-cl-small">Nov 26</td>
+                            <td><a href="#" class="cl-link">road bike trek 520 touring bike 56cm</a></td>
+                            <td>$800</td>
+                            <td class="text-cl-small">📷</td>
+                        </tr>
+                        <tr>
+                            <td class="text-cl-small">Nov 26</td>
+                            <td><a href="#" class="cl-link">free firewood - you haul</a></td>
+                            <td>$0</td>
+                            <td class="text-cl-small"></td>
+                        </tr>
+                        <tr>
+                            <td class="text-cl-small">Nov 25</td>
+                            <td><a href="#" class="cl-link">washer and dryer set - samsung</a></td>
+                            <td>$500</td>
+                            <td class="text-cl-small">📷</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Component Examples -->
+                <h2 class="text-xl font-bold mb-3">Component Examples</h2>
+
+                <div class="cl-card">
+                    <h3 class="font-bold mb-2">Classic Card Component</h3>
+                    <p class="text-sm mb-2">
+                        This is a card component with the classic Craigslist aesthetic.
+                        Simple borders, minimal padding, no fancy shadows or rounded corners.
+                    </p>
+                    <button class="cl-button">Click Me</button>
+                </div>
+
+                <div class="cl-card">
+                    <h3 class="font-bold mb-2">Form Elements</h3>
+                    <form>
+                        <div class="mb-3">
+                            <label class="block text-sm font-bold mb-1">Title</label>
+                            <input type="text" class="cl-input" placeholder="Enter title">
+                        </div>
+                        <div class="mb-3">
+                            <label class="block text-sm font-bold mb-1">Category</label>
+                            <select class="cl-select">
+                                <option>furniture</option>
+                                <option>electronics</option>
+                                <option>cars+trucks</option>
+                                <option>general</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="block text-sm font-bold mb-1">Description</label>
+                            <textarea class="cl-input" rows="4" placeholder="Describe your item"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label class="block text-sm font-bold mb-1">Price</label>
+                            <input type="text" class="cl-input" placeholder="$">
+                        </div>
+                        <button type="submit" class="cl-button">post</button>
+                        <button type="button" class="cl-button ml-2">cancel</button>
+                    </form>
+                </div>
+
+                <div class="cl-alert">
+                    <strong>Note:</strong> This is a standard alert message.
+                </div>
+
+                <div class="cl-alert-error">
+                    <strong>Error:</strong> Something went wrong!
+                </div>
+
+                <!-- Utility Classes Demo -->
+                <div class="cl-card">
+                    <h3 class="font-bold mb-2">Utility Classes</h3>
+                    <div class="mb-2">
+                        <span class="text-cl-blue">Link Blue</span> •
+                        <span class="text-cl-purple">Visited Purple</span> •
+                        <span class="text-cl-gray-dark">Gray Dark</span>
+                    </div>
+                    <div class="mb-2">
+                        <code class="bg-cl-gray-light p-1 text-sm">text-cl-small</code>
+                        <code class="bg-cl-gray-light p-1 text-sm ml-1">text-cl-base</code>
+                    </div>
+                    <div class="dense mb-2">
+                        <p>This text uses the "dense" class for that classic tight line-height.</p>
+                        <p>Multiple lines packed together just like the good old days.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cl-footer">
+            <div class="text-center">
+                <p>
+                    <a href="https://github.com/brittonhayes/craigslist-css" class="cl-link">github</a> •
+                    <a href="https://github.com/brittonhayes/craigslist-css#readme" class="cl-link">docs</a> •
+                    <a href="https://www.npmjs.com/package/@brittonhayes/craigslist-css" class="cl-link">npm</a>
+                </p>
+                <p class="mt-2">
+                    © 2025 craigslist-css - A Tailwind CSS theme by <a href="https://github.com/brittonhayes" class="cl-link">Britton Hayes</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
