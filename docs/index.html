@@ -3,7 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>craigslist-css demo - olympia, WA</title>
+
+    <!-- Primary Meta Tags -->
+    <title>craigslist-css - A Tailwind CSS Theme Capturing the Craigslist Aesthetic</title>
+    <meta name="title" content="craigslist-css - A Tailwind CSS Theme Capturing the Craigslist Aesthetic">
+    <meta name="description" content="A Tailwind CSS theme that captures the iconic Craigslist aesthetic. No fancy gradients, no smooth animations, no rounded corners. Just pure, functional web design from 1995. View live examples and learn how to use it in your projects.">
+    <meta name="keywords" content="tailwind css, craigslist, css theme, minimalist design, retro web design, functional design, tailwind plugin, web development">
+    <meta name="author" content="Britton Hayes">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://brittonhayes.github.io/craigslist-css/">
+    <meta property="og:title" content="craigslist-css - A Tailwind CSS Theme Capturing the Craigslist Aesthetic">
+    <meta property="og:description" content="A Tailwind CSS theme that captures the iconic Craigslist aesthetic. No fancy gradients, no smooth animations, no rounded corners. Just pure, functional web design from 1995.">
+    <meta property="og:image" content="https://brittonhayes.github.io/craigslist-css/og-image.png">
+    <meta property="og:site_name" content="craigslist-css">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://brittonhayes.github.io/craigslist-css/">
+    <meta name="twitter:title" content="craigslist-css - A Tailwind CSS Theme">
+    <meta name="twitter:description" content="A Tailwind CSS theme capturing the iconic Craigslist aesthetic. Pure, functional web design from 1995. View examples and learn how to use it.">
+    <meta name="twitter:image" content="https://brittonhayes.github.io/craigslist-css/og-image.png">
+    <meta name="twitter:creator" content="@brittonhayes">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://brittonhayes.github.io/craigslist-css/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔵</text></svg>">
+
     <link href="./dist/output.css" rel="stylesheet">
     <style>
         /* Additional demo-specific styles */
@@ -80,30 +111,52 @@
 <body>
     <div class="cl-header">
         <div class="container">
-            <h1 class="text-2xl font-bold mb-2">craigslist-css demo</h1>
-            <p class="text-sm">
-                <a href="#" class="cl-link">washington</a> &gt;
-                <a href="#" class="cl-link">olympia</a>
-            </p>
+            <h1 class="text-2xl font-bold mb-2">craigslist-css</h1>
+            <p class="text-sm">A Tailwind CSS Theme Capturing the Craigslist Aesthetic</p>
         </div>
     </div>
 
     <div class="container">
-        <!-- Search Bar -->
-        <div class="cl-search-bar">
-            <input type="text" class="cl-search-input" placeholder="search craigslist">
-            <select class="cl-select">
-                <option>all for sale / wanted</option>
-                <option>housing</option>
-                <option>jobs</option>
-                <option>services</option>
-            </select>
-            <button class="cl-search-button">search</button>
+        <!-- Introduction -->
+        <div class="cl-card" style="background-color: #ffffcc; border: 2px solid #0000ff;">
+            <h2 class="text-xl font-bold mb-2">Welcome to craigslist-css Documentation</h2>
+            <p class="mb-2">
+                This page demonstrates all components and utilities available in the craigslist-css Tailwind theme.
+                Each example includes the code you need to use it in your own project.
+            </p>
+            <p>
+                No fancy gradients, no smooth animations, no rounded corners. Just pure, functional web design.
+            </p>
         </div>
 
-        <!-- Alert Example -->
-        <div class="cl-alert-success">
-            ✓ Your posting has been published successfully!
+        <!-- Installation -->
+        <div class="cl-section" id="installation">
+            <h2 class="text-xl font-bold mb-3">Installation</h2>
+
+            <div class="cl-card mb-4">
+                <h3 class="font-bold mb-2">1. Configure npm for GitHub Packages</h3>
+                <p class="text-sm mb-2">Create or edit <code class="bg-cl-gray-light p-1">.npmrc</code> in your project:</p>
+                <pre class="bg-cl-gray-light p-2 mb-2" style="border: 1px solid #ccc; overflow-x: auto;"><code>@brittonhayes:registry=https://npm.pkg.github.com</code></pre>
+            </div>
+
+            <div class="cl-card mb-4">
+                <h3 class="font-bold mb-2">2. Install the package</h3>
+                <pre class="bg-cl-gray-light p-2 mb-2" style="border: 1px solid #ccc; overflow-x: auto;"><code>npm install @brittonhayes/craigslist-css</code></pre>
+            </div>
+
+            <div class="cl-card mb-4">
+                <h3 class="font-bold mb-2">3. Include in your HTML</h3>
+                <pre class="bg-cl-gray-light p-2 mb-2" style="border: 1px solid #ccc; overflow-x: auto;"><code>&lt;link href="./dist/output.css" rel="stylesheet"&gt;</code></pre>
+            </div>
+
+            <div class="cl-card">
+                <h3 class="font-bold mb-2">Quick Links</h3>
+                <ul class="cl-list text-sm">
+                    <li><a href="https://github.com/brittonhayes/craigslist-css" class="cl-link">GitHub Repository</a></li>
+                    <li><a href="https://www.npmjs.com/package/@brittonhayes/craigslist-css" class="cl-link">npm Package</a></li>
+                    <li><a href="https://github.com/brittonhayes/craigslist-css#readme" class="cl-link">Full Documentation</a></li>
+                </ul>
+            </div>
         </div>
 
         <div class="flex gap-6">
@@ -250,68 +303,245 @@
 
                 <!-- Component Examples -->
                 <h2 class="text-xl font-bold mb-3">Component Examples</h2>
+                <p class="mb-4">Each example below shows the live component and the code you need to use it.</p>
 
-                <div class="cl-card">
-                    <h3 class="font-bold mb-2">Classic Card Component</h3>
-                    <p class="text-sm mb-2">
-                        This is a card component with the classic Craigslist aesthetic.
-                        Simple borders, minimal padding, no fancy shadows or rounded corners.
-                    </p>
-                    <button class="cl-button">Click Me</button>
+                <!-- Buttons -->
+                <div class="cl-section">
+                    <h3 class="font-bold mb-2">Buttons</h3>
+                    <div class="cl-card mb-2">
+                        <button class="cl-button">Standard Button</button>
+                        <button class="cl-button ml-2">Another Button</button>
+                    </div>
+                    <pre class="bg-cl-gray-light p-2 mb-3" style="border: 1px solid #ccc; overflow-x: auto;"><code>&lt;button class="cl-button"&gt;Standard Button&lt;/button&gt;</code></pre>
                 </div>
 
-                <div class="cl-card">
-                    <h3 class="font-bold mb-2">Form Elements</h3>
-                    <form>
-                        <div class="mb-3">
-                            <label class="block text-sm font-bold mb-1">Title</label>
-                            <input type="text" class="cl-input" placeholder="Enter title">
-                        </div>
-                        <div class="mb-3">
-                            <label class="block text-sm font-bold mb-1">Category</label>
+                <!-- Search Bar -->
+                <div class="cl-section">
+                    <h3 class="font-bold mb-2">Search Bar</h3>
+                    <div class="cl-card mb-2">
+                        <div class="cl-search-bar">
+                            <input type="text" class="cl-search-input" placeholder="search craigslist">
                             <select class="cl-select">
-                                <option>furniture</option>
-                                <option>electronics</option>
-                                <option>cars+trucks</option>
-                                <option>general</option>
+                                <option>all for sale / wanted</option>
+                                <option>housing</option>
+                                <option>jobs</option>
                             </select>
+                            <button class="cl-search-button">search</button>
                         </div>
-                        <div class="mb-3">
-                            <label class="block text-sm font-bold mb-1">Description</label>
-                            <textarea class="cl-input" rows="4" placeholder="Describe your item"></textarea>
-                        </div>
-                        <div class="mb-3">
-                            <label class="block text-sm font-bold mb-1">Price</label>
-                            <input type="text" class="cl-input" placeholder="$">
-                        </div>
-                        <button type="submit" class="cl-button">post</button>
-                        <button type="button" class="cl-button ml-2">cancel</button>
-                    </form>
+                    </div>
+                    <pre class="bg-cl-gray-light p-2 mb-3" style="border: 1px solid #ccc; overflow-x: auto;"><code>&lt;div class="cl-search-bar"&gt;
+  &lt;input type="text" class="cl-search-input" placeholder="search craigslist"&gt;
+  &lt;select class="cl-select"&gt;
+    &lt;option&gt;all for sale / wanted&lt;/option&gt;
+  &lt;/select&gt;
+  &lt;button class="cl-search-button"&gt;search&lt;/button&gt;
+&lt;/div&gt;</code></pre>
                 </div>
 
-                <div class="cl-alert">
-                    <strong>Note:</strong> This is a standard alert message.
+                <!-- Cards -->
+                <div class="cl-section">
+                    <h3 class="font-bold mb-2">Cards</h3>
+                    <div class="cl-card mb-2">
+                        <h4 class="font-bold mb-2">Card Title</h4>
+                        <p class="text-sm mb-2">
+                            This is a card component with the classic Craigslist aesthetic.
+                            Simple borders, minimal padding, no fancy shadows or rounded corners.
+                        </p>
+                        <button class="cl-button">Click Me</button>
+                    </div>
+                    <pre class="bg-cl-gray-light p-2 mb-3" style="border: 1px solid #ccc; overflow-x: auto;"><code>&lt;div class="cl-card"&gt;
+  &lt;h4 class="font-bold mb-2"&gt;Card Title&lt;/h4&gt;
+  &lt;p class="text-sm mb-2"&gt;Card content goes here&lt;/p&gt;
+  &lt;button class="cl-button"&gt;Click Me&lt;/button&gt;
+&lt;/div&gt;</code></pre>
                 </div>
 
-                <div class="cl-alert-error">
-                    <strong>Error:</strong> Something went wrong!
+                <!-- Links -->
+                <div class="cl-section">
+                    <h3 class="font-bold mb-2">Links</h3>
+                    <div class="cl-card mb-2">
+                        <a href="#" class="cl-link">Classic Blue Link</a> •
+                        <a href="#" class="cl-link text-cl-purple">Visited Purple Link</a>
+                    </div>
+                    <pre class="bg-cl-gray-light p-2 mb-3" style="border: 1px solid #ccc; overflow-x: auto;"><code>&lt;a href="#" class="cl-link"&gt;Classic Blue Link&lt;/a&gt;</code></pre>
                 </div>
 
-                <!-- Utility Classes Demo -->
-                <div class="cl-card">
+                <!-- Lists -->
+                <div class="cl-section">
+                    <h3 class="font-bold mb-2">Lists</h3>
+                    <div class="cl-card mb-2">
+                        <ul class="cl-list text-sm">
+                            <li><a href="#" class="cl-link">List Item 1</a></li>
+                            <li><a href="#" class="cl-link">List Item 2</a></li>
+                            <li><a href="#" class="cl-link">List Item 3</a></li>
+                        </ul>
+                    </div>
+                    <pre class="bg-cl-gray-light p-2 mb-3" style="border: 1px solid #ccc; overflow-x: auto;"><code>&lt;ul class="cl-list text-sm"&gt;
+  &lt;li&gt;&lt;a href="#" class="cl-link"&gt;List Item 1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="cl-link"&gt;List Item 2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="cl-link"&gt;List Item 3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                </div>
+
+                <!-- Alerts -->
+                <div class="cl-section">
+                    <h3 class="font-bold mb-2">Alerts</h3>
+                    <div class="cl-alert mb-2">
+                        <strong>Note:</strong> This is a standard alert message.
+                    </div>
+                    <div class="cl-alert-error mb-2">
+                        <strong>Error:</strong> Something went wrong!
+                    </div>
+                    <div class="cl-alert-success mb-2">
+                        <strong>Success:</strong> Operation completed successfully!
+                    </div>
+                    <pre class="bg-cl-gray-light p-2 mb-3" style="border: 1px solid #ccc; overflow-x: auto;"><code>&lt;div class="cl-alert"&gt;Standard alert message&lt;/div&gt;
+&lt;div class="cl-alert-error"&gt;Error message&lt;/div&gt;
+&lt;div class="cl-alert-success"&gt;Success message&lt;/div&gt;</code></pre>
+                </div>
+
+                <!-- Form Elements -->
+                <div class="cl-section">
+                    <h3 class="font-bold mb-2">Form Elements</h3>
+                    <div class="cl-card mb-2">
+                        <form>
+                            <div class="mb-3">
+                                <label class="block text-sm font-bold mb-1">Text Input</label>
+                                <input type="text" class="cl-input" placeholder="Enter text">
+                            </div>
+                            <div class="mb-3">
+                                <label class="block text-sm font-bold mb-1">Select Dropdown</label>
+                                <select class="cl-select">
+                                    <option>furniture</option>
+                                    <option>electronics</option>
+                                    <option>cars+trucks</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label class="block text-sm font-bold mb-1">Textarea</label>
+                                <textarea class="cl-input" rows="3" placeholder="Enter description"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <pre class="bg-cl-gray-light p-2 mb-3" style="border: 1px solid #ccc; overflow-x: auto;"><code>&lt;input type="text" class="cl-input" placeholder="Enter text"&gt;
+&lt;select class="cl-select"&gt;
+  &lt;option&gt;Option 1&lt;/option&gt;
+&lt;/select&gt;
+&lt;textarea class="cl-input" rows="3"&gt;&lt;/textarea&gt;</code></pre>
+                </div>
+
+                <!-- Tables -->
+                <div class="cl-section">
+                    <h3 class="font-bold mb-2">Tables</h3>
+                    <table class="cl-table mb-2">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Title</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-cl-small">Nov 27</td>
+                                <td><a href="#" class="cl-link">Sample listing</a></td>
+                                <td>$100</td>
+                            </tr>
+                            <tr>
+                                <td class="text-cl-small">Nov 26</td>
+                                <td><a href="#" class="cl-link">Another item</a></td>
+                                <td>$50</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <pre class="bg-cl-gray-light p-2 mb-3" style="border: 1px solid #ccc; overflow-x: auto;"><code>&lt;table class="cl-table"&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Column 1&lt;/th&gt;
+      &lt;th&gt;Column 2&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Data 1&lt;/td&gt;
+      &lt;td&gt;Data 2&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+                </div>
+
+                <!-- Utility Classes -->
+                <div class="cl-section">
                     <h3 class="font-bold mb-2">Utility Classes</h3>
-                    <div class="mb-2">
-                        <span class="text-cl-blue">Link Blue</span> •
-                        <span class="text-cl-purple">Visited Purple</span> •
-                        <span class="text-cl-gray-dark">Gray Dark</span>
+                    <div class="cl-card mb-2">
+                        <h4 class="font-bold mb-2">Colors</h4>
+                        <div class="mb-2">
+                            <span class="text-cl-blue">text-cl-blue</span> •
+                            <span class="text-cl-purple">text-cl-purple</span> •
+                            <span class="text-cl-gray-dark">text-cl-gray-dark</span>
+                        </div>
+                        <h4 class="font-bold mb-2 mt-3">Typography</h4>
+                        <div class="mb-2">
+                            <div class="text-cl-small">text-cl-small (10px)</div>
+                            <div class="text-cl-base">text-cl-base (14px)</div>
+                        </div>
+                        <h4 class="font-bold mb-2 mt-3">Density</h4>
+                        <div class="dense mb-2" style="border: 1px solid #ccc; padding: 8px;">
+                            <p>This text uses the "dense" class.</p>
+                            <p>Line height: 1.2 - perfect for that classic tight spacing.</p>
+                        </div>
                     </div>
-                    <div class="mb-2">
-                        <code class="bg-cl-gray-light p-1 text-sm">text-cl-small</code>
-                        <code class="bg-cl-gray-light p-1 text-sm ml-1">text-cl-base</code>
-                    </div>
-                    <div class="dense mb-2">
-                        <p>This text uses the "dense" class for that classic tight line-height.</p>
-                        <p>Multiple lines packed together just like the good old days.</p>
+                    <pre class="bg-cl-gray-light p-2 mb-3" style="border: 1px solid #ccc; overflow-x: auto;"><code>&lt;span class="text-cl-blue"&gt;Blue text&lt;/span&gt;
+&lt;div class="text-cl-small"&gt;Small text&lt;/div&gt;
+&lt;div class="dense"&gt;Tight line-height&lt;/div&gt;</code></pre>
+                </div>
+
+                <!-- Color Palette -->
+                <div class="cl-section">
+                    <h3 class="font-bold mb-2">Color Palette</h3>
+                    <div class="cl-card">
+                        <table class="cl-table">
+                            <thead>
+                                <tr>
+                                    <th>Color Name</th>
+                                    <th>Hex Code</th>
+                                    <th>Usage</th>
+                                    <th>Preview</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>cl-blue</code></td>
+                                    <td>#0000ff</td>
+                                    <td>Primary links</td>
+                                    <td><div style="background-color: #0000ff; width: 40px; height: 20px; border: 1px solid #000;"></div></td>
+                                </tr>
+                                <tr>
+                                    <td><code>cl-purple</code></td>
+                                    <td>#551a8b</td>
+                                    <td>Visited links</td>
+                                    <td><div style="background-color: #551a8b; width: 40px; height: 20px; border: 1px solid #000;"></div></td>
+                                </tr>
+                                <tr>
+                                    <td><code>cl-gray</code></td>
+                                    <td>#cccccc</td>
+                                    <td>Borders</td>
+                                    <td><div style="background-color: #cccccc; width: 40px; height: 20px; border: 1px solid #000;"></div></td>
+                                </tr>
+                                <tr>
+                                    <td><code>cl-red</code></td>
+                                    <td>#ff0000</td>
+                                    <td>Errors</td>
+                                    <td><div style="background-color: #ff0000; width: 40px; height: 20px; border: 1px solid #000;"></div></td>
+                                </tr>
+                                <tr>
+                                    <td><code>cl-green</code></td>
+                                    <td>#008000</td>
+                                    <td>Success</td>
+                                    <td><div style="background-color: #008000; width: 40px; height: 20px; border: 1px solid #000;"></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
