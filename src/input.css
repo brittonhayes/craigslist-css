@@ -50,7 +50,7 @@
 
   /* Classic focus states */
   *:focus {
-    outline-color: #0000ff;
+    outline-color: #00e;
   }
 
   /* Disable smooth scrolling for that instant 90s feel */
@@ -116,7 +116,7 @@
 
   /* Simple alert boxes */
   .cl-alert {
-    @apply border border-cl-gray p-2 mb-3 text-sm bg-cl-bg-alt;
+    @apply border border-cl-border p-2 mb-3 text-sm bg-cl-bg-alt;
   }
 
   .cl-alert-error {

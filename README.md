@@ -59,29 +59,61 @@ Include in your HTML:
 
 ## Features
 
-- Classic blue links (#0000ff)
-- Purple visited links
-- Zero border radius
-- Minimal color palette
-- Dense typography
-- No shadows
-- Instant navigation
-- Responsive
+- Authentic Craigslist colors (#00e blue, #222 text)
+- Purple visited links (#551a8b)
+- Open Sans typography (matching real Craigslist)
+- Subtle border radius (2-5px)
+- Minimal, functional color palette
+- Dense, efficient typography
+- No box shadows
+- Instant navigation (no smooth scroll)
+- Responsive layouts
 
 ## Color Palette
 
+Extracted from authentic Craigslist production CSS:
+
 | Color Name | Hex Code | Usage |
 |------------|----------|-------|
-| cl-blue | #0000ff | Primary links |
+| cl-blue | #00e | Primary links |
+| cl-blue-selected | #5252ff | Selected button state |
 | cl-purple | #551a8b | Visited links |
 | cl-bg | #ffffff | Main background |
-| cl-bg-alt | #f7f7f7 | Alternate background |
-| cl-text | #000000 | Text color |
-| cl-gray | #cccccc | Borders |
-| cl-gray-dark | #999999 | Dark gray text |
-| cl-gray-light | #eeeeee | Light backgrounds |
-| cl-red | #ff0000 | Errors |
-| cl-green | #008000 | Success messages |
+| cl-bg-alt | #f7f7f7 | Fieldset/alternate background |
+| cl-bg-sidebar | #f4f4f4 | Sidebar background |
+| cl-text | #222 | Body text (not pure black) |
+| cl-text-muted | #777 | Gray text for metadata |
+| cl-text-disabled | #aaa | Disabled/placeholder text |
+| cl-border | #ccc | Primary borders |
+| cl-border-light | #e0e0e0 | Button borders |
+| cl-border-alt | #ddd | Section borders |
+| cl-gray-dark | #999 | Dark gray accents |
+| cl-gray-light | #eee | Light gray background/hover |
+| cl-red | #ff0000 | Error emphasis |
+| cl-red-light | #fbb | Error borders |
+| cl-green | #090 | Success/post green |
+| cl-orange | orange | Update indicators |
+
+## Design Tokens
+
+### Typography
+
+- **Font Family**: Open Sans, Helvetica, Arial, sans-serif (matching authentic Craigslist)
+- **Font Sizes**: 10px (xs), 12px (sm), 14px (base), 16px (lg), 18px (xl), plus percentage-based sizes (68%, 70%, 80%, 95%)
+- **Line Heights**: Ultra-tight (1.1), tight (1.2), snug (1.3), normal (1.4), compact (1.43), relaxed (1.7)
+- **Font Weights**: 400 (normal), 500 (medium), 700 (bold), 800 (bolder)
+
+### Spacing
+
+Hyper-specific values matching real Craigslist:
+- 1px, 2px, 5px, 8px, 9px, 12px, 14px, 16px, 20px, 22px, 24px, 28px, 32px
+
+### Border Radius
+
+Subtle roundedness only:
+- sm: 2px (fieldsets)
+- DEFAULT: 3px (inputs, buttons)
+- md: 5px (button groups)
 
 ## Components
 
@@ -209,8 +241,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'cl-blue': '#0000ff', // Change to your preferred blue
-        // ... other colors
+        'cl-blue': '#00e',     // Authentic Craigslist link blue
+        'cl-text': '#222',     // Body text (not pure black)
+        // ... see tailwind.config.js for all colors
+      },
+      fontFamily: {
+        'sans': ['"Open Sans"', 'Helvetica', 'Arial', 'sans-serif'],
       },
     },
   },
