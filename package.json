@@ -1,0 +1,31 @@
+{
+  "name": "craigslist-css",
+  "version": "1.0.0",
+  "description": "A Tailwind CSS theme that captures the iconic Craigslist aesthetic",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css",
+    "build:watch": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build:minify": "tailwindcss -i ./src/input.css -o ./dist/output.min.css --minify"
+  },
+  "keywords": [
+    "tailwind",
+    "tailwindcss",
+    "css",
+    "craigslist",
+    "theme",
+    "retro",
+    "nostalgic",
+    "y2k"
+  ],
+  "author": "Craigslist Design Team",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  },
+  "files": [
+    "tailwind.config.js",
+    "src/input.css",
+    "dist/"
+  ]
+}

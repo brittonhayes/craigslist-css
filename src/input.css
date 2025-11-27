@@ -1,0 +1,129 @@
+/*
+ * Craigslist CSS - A Tailwind Theme
+ * Bringing back the glory days of utilitarian web design
+ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Additional Craigslist-inspired utilities */
+@layer utilities {
+  .text-cl-small {
+    font-size: 10px;
+  }
+
+  .text-cl-base {
+    font-size: 14px;
+  }
+
+  .no-decoration {
+    text-decoration: none;
+  }
+
+  .dense {
+    line-height: 1.2;
+    letter-spacing: normal;
+  }
+
+  .ultra-dense {
+    line-height: 1.1;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+
+/* Classic Craigslist overrides */
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Remove modern styling */
+  button,
+  input,
+  select,
+  textarea {
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  /* Classic focus states */
+  *:focus {
+    outline-color: #0000ff;
+  }
+
+  /* Disable smooth scrolling for that instant 90s feel */
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Craigslist-specific component patterns */
+@layer components {
+  /* Classic posting list */
+  .cl-posting-list {
+    @apply cl-list;
+  }
+
+  .cl-posting-list li {
+    @apply py-1 border-b border-cl-gray-light;
+  }
+
+  .cl-posting-list li:last-child {
+    @apply border-b-0;
+  }
+
+  /* Category grid */
+  .cl-category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  @media (max-width: 640px) {
+    .cl-category-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* Search bar */
+  .cl-search-bar {
+    @apply flex gap-1 mb-4;
+  }
+
+  .cl-search-input {
+    @apply cl-input flex-1;
+  }
+
+  .cl-search-button {
+    @apply cl-button;
+  }
+
+  /* Breadcrumb navigation */
+  .cl-breadcrumb {
+    @apply text-sm mb-3;
+  }
+
+  .cl-breadcrumb a {
+    @apply cl-link;
+  }
+
+  .cl-breadcrumb span {
+    @apply mx-1 text-cl-gray-dark;
+  }
+
+  /* Simple alert boxes */
+  .cl-alert {
+    @apply border border-cl-gray p-2 mb-3 text-sm bg-cl-bg-alt;
+  }
+
+  .cl-alert-error {
+    @apply cl-alert border-cl-red text-cl-red bg-white;
+  }
+
+  .cl-alert-success {
+    @apply cl-alert border-cl-green text-cl-green bg-white;
+  }
+}
