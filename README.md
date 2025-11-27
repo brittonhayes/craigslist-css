@@ -1,67 +1,38 @@
 # craigslist-css
 
-[![CI](https://github.com/brittonhayes/craigslist-css/actions/workflows/ci.yml/badge.svg)](https://github.com/brittonhayes/craigslist-css/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![npm version](https://img.shields.io/github/package-json/v/brittonhayes/craigslist-css)](https://github.com/brittonhayes/craigslist-css/packages)
+A Tailwind CSS theme that captures the Craigslist aesthetic.
 
-> A Tailwind CSS theme that captures the iconic Craigslist aesthetic
-
-Transform any website into a nostalgic masterpiece of utilitarian web design. No fancy gradients, no smooth animations, no rounded corners—just pure, unadulterated early-2000s functionality.
-
-## Features
-
-- 🔵 **Classic Blue Links** - That unmistakable `#0000ff`
-- 💜 **Purple Visited Links** - Keep track of where you've been
-- 📦 **Zero Border Radius** - Corners so sharp they'll cut you
-- 🎨 **Minimal Color Palette** - Who needs more than 8 colors anyway?
-- 📏 **Dense Typography** - More content, less whitespace
-- 🚫 **No Shadows** - Flat is beautiful
-- ⚡ **Instant Navigation** - No smooth scrolling here
-- 📱 **Responsive** - Even works on your mobile device (begrudgingly)
+No fancy gradients, no smooth animations, no rounded corners. Just pure, functional web design.
 
 ## Installation
 
-### Via GitHub Packages
-
-First, configure npm to use GitHub Packages for the `@brittonhayes` scope. Create or edit `.npmrc` in your project:
+Configure npm to use GitHub Packages for the @brittonhayes scope. Create or edit .npmrc in your project:
 
 ```
 @brittonhayes:registry=https://npm.pkg.github.com
 ```
 
-Then install the package:
+Install the package:
 
 ```bash
 npm install @brittonhayes/craigslist-css
 ```
 
-### Via NPM (Coming Soon)
-
-```bash
-npm install craigslist-css
-```
-
-### Via CDN
-
-```html
-<link href="https://unpkg.com/@brittonhayes/craigslist-css/dist/output.min.css" rel="stylesheet">
-```
-
 ## Quick Start
 
-### 1. Install Dependencies
+Install dependencies:
 
 ```bash
 npm install
 ```
 
-### 2. Build the CSS
+Build the CSS:
 
 ```bash
 npm run build
 ```
 
-### 3. Include in Your HTML
+Include in your HTML:
 
 ```html
 <!DOCTYPE html>
@@ -82,20 +53,31 @@ npm run build
 </html>
 ```
 
+## Features
+
+- Classic blue links (#0000ff)
+- Purple visited links
+- Zero border radius
+- Minimal color palette
+- Dense typography
+- No shadows
+- Instant navigation
+- Responsive
+
 ## Color Palette
 
 | Color Name | Hex Code | Usage |
 |------------|----------|-------|
-| `cl-blue` | `#0000ff` | Primary links |
-| `cl-purple` | `#551a8b` | Visited links |
-| `cl-bg` | `#ffffff` | Main background |
-| `cl-bg-alt` | `#f7f7f7` | Alternate background |
-| `cl-text` | `#000000` | Text color |
-| `cl-gray` | `#cccccc` | Borders |
-| `cl-gray-dark` | `#999999` | Dark gray text |
-| `cl-gray-light` | `#eeeeee` | Light backgrounds |
-| `cl-red` | `#ff0000` | Errors |
-| `cl-green` | `#008000` | Success messages |
+| cl-blue | #0000ff | Primary links |
+| cl-purple | #551a8b | Visited links |
+| cl-bg | #ffffff | Main background |
+| cl-bg-alt | #f7f7f7 | Alternate background |
+| cl-text | #000000 | Text color |
+| cl-gray | #cccccc | Borders |
+| cl-gray-dark | #999999 | Dark gray text |
+| cl-gray-light | #eeeeee | Light backgrounds |
+| cl-red | #ff0000 | Errors |
+| cl-green | #008000 | Success messages |
 
 ## Components
 
@@ -191,16 +173,16 @@ npm run build
 
 ### Typography
 
-- `text-cl-small` - 10px font size
-- `text-cl-base` - 14px font size (default)
-- `dense` - Tight line height (1.2)
-- `ultra-dense` - Ultra tight line height (1.1)
+- text-cl-small - 10px font size
+- text-cl-base - 14px font size (default)
+- dense - Tight line height (1.2)
+- ultra-dense - Ultra tight line height (1.1)
 
 ### Layout
 
 All standard Tailwind utilities work, but with Craigslist-themed values:
 
-- Spacing: `p-1` (4px), `p-2` (8px), `p-3` (12px), etc.
+- Spacing: p-1 (4px), p-2 (8px), p-3 (12px), etc.
 - No border radius by default
 - No shadows by default
 
@@ -208,16 +190,16 @@ All standard Tailwind utilities work, but with Craigslist-themed values:
 
 This theme follows the core principles that made Craigslist a design icon:
 
-1. **Function Over Form** - Every element serves a purpose
-2. **No Unnecessary Decoration** - If it doesn't help users, it doesn't exist
-3. **Dense Information Display** - Screen space is valuable
-4. **Instant Feedback** - No loading spinners, no smooth transitions
-5. **Accessible Colors** - High contrast, clear visual hierarchy
-6. **Familiar Patterns** - Users know exactly what to expect
+1. Function over form - Every element serves a purpose
+2. No unnecessary decoration - If it doesn't help users, it doesn't exist
+3. Dense information display - Screen space is valuable
+4. Instant feedback - No loading spinners, no smooth transitions
+5. Accessible colors - High contrast, clear visual hierarchy
+6. Familiar patterns - Users know exactly what to expect
 
 ## Customization
 
-Want to tweak the theme? Edit `tailwind.config.js`:
+Edit tailwind.config.js to tweak the theme:
 
 ```javascript
 module.exports = {
@@ -231,12 +213,6 @@ module.exports = {
   },
 }
 ```
-
-## Browser Support
-
-- ✅ Internet Explorer 6+
-- ✅ Netscape Navigator 9+
-- ✅ Every other browser ever made
 
 ## Building for Production
 
@@ -253,25 +229,25 @@ npm run build:minify
 
 ## Examples
 
-Check out the `demo/index.html` file for a full example page showcasing all components and utilities.
+Check out demo/index.html for a full example page showcasing all components and utilities.
 
 To view the demo:
 
-1. Build the CSS: `npm run build`
-2. Open `demo/index.html` in your browser
+1. Build the CSS: npm run build
+2. Open demo/index.html in your browser
 
 ## Use Cases
 
 Perfect for:
 
-- 🏠 Classified ad websites
-- 📋 Job boards
-- 🛒 Marketplace applications
-- 📰 News aggregators
-- 🎨 Retro/nostalgic projects
-- 🧪 Prototypes that don't need to look fancy
-- 📚 Documentation sites
-- 🎓 Internal tools
+- Classified ad websites
+- Job boards
+- Marketplace applications
+- News aggregators
+- Retro/nostalgic projects
+- Prototypes that don't need to look fancy
+- Documentation sites
+- Internal tools
 
 ## Philosophy
 
@@ -279,12 +255,7 @@ In a world of over-designed, JavaScript-heavy, CPU-melting web applications, som
 
 ## Contributing
 
-Found a way to make it even more utilitarian? We'd love your help! Check out our [Contributing Guide](CONTRIBUTING.md) for details on:
-
-- Setting up your development environment
-- Our design philosophy and guidelines
-- How to submit pull requests
-- Reporting issues
+Found a way to make it even more utilitarian? Check out CONTRIBUTING.md for details on setting up your development environment and submitting pull requests.
 
 All contributions should maintain the minimalist, utilitarian aesthetic that makes Craigslist iconic.
 
@@ -294,29 +265,29 @@ MIT License - Use it however you want
 
 ## Credits
 
-Inspired by the timeless design of [Craigslist.org](https://craigslist.org), a website that has remained functionally perfect since 1995.
+Inspired by the timeless design of Craigslist.org, a website that has remained functionally perfect since 1995.
 
-**Note:** This project is not affiliated with or endorsed by Craigslist. It's a loving tribute to their iconic design aesthetic.
+Note: This project is not affiliated with or endorsed by Craigslist. It's a loving tribute to their iconic design aesthetic.
 
 ## FAQ
 
-**Q: Is this serious?**
+Q: Is this serious?
 A: Absolutely. There's beauty in simplicity.
 
-**Q: Can I use this in production?**
+Q: Can I use this in production?
 A: Why not? Craigslist has been using a similar design for decades and it's one of the most successful websites ever.
 
-**Q: What about dark mode?**
+Q: What about dark mode?
 A: Dark mode is a modern luxury. But if you must, you can extend the theme yourself.
 
-**Q: Why no animations?**
+Q: Why no animations?
 A: They slow things down. We're here for information, not entertainment.
 
-**Q: Can I add rounded corners?**
+Q: Can I add rounded corners?
 A: You can, but why would you want to?
 
 ---
 
-Made with 💙 by [Britton Hayes](https://github.com/brittonhayes)
+Made by Britton Hayes (https://github.com/brittonhayes)
 
-*"Don't fix what isn't broken."* - Craig Newmark (probably)
+"Don't fix what isn't broken." - Craig Newmark (probably)
