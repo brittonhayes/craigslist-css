@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>craigslist-css demo - san francisco bay area</title>
+    <title>craigslist-css demo - olympia, WA</title>
     <link href="./dist/output.css" rel="stylesheet">
     <style>
         /* Additional demo-specific styles */
@@ -12,6 +12,69 @@
             margin: 0 auto;
             padding: 0 16px;
         }
+
+        /* Mobile-friendly responsive styles */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 8px;
+            }
+
+            .flex {
+                flex-direction: column !important;
+            }
+
+            .flex > div[style*="flex: 0 0 300px"] {
+                flex: 1 !important;
+                width: 100% !important;
+            }
+
+            .flex > div[style*="flex: 1"] {
+                width: 100% !important;
+            }
+
+            /* Make search bar stack vertically */
+            .cl-search-bar {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            .cl-search-input,
+            .cl-select,
+            .cl-search-button {
+                width: 100% !important;
+            }
+
+            /* Make tables scrollable on mobile */
+            .cl-table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+
+            /* Adjust font sizes for mobile */
+            h1 {
+                font-size: 1.25rem !important;
+            }
+
+            h2 {
+                font-size: 1.1rem !important;
+            }
+
+            /* Make cards more compact on mobile */
+            .cl-card {
+                padding: 8px !important;
+            }
+
+            /* Stack buttons vertically on small screens */
+            @media (max-width: 480px) {
+                .cl-button {
+                    display: block;
+                    width: 100%;
+                    margin: 4px 0 !important;
+                }
+            }
+        }
     </style>
 </head>
 <body>
@@ -19,8 +82,8 @@
         <div class="container">
             <h1 class="text-2xl font-bold mb-2">craigslist-css demo</h1>
             <p class="text-sm">
-                <a href="#" class="cl-link">SF bay area</a> &gt;
-                <a href="#" class="cl-link">san francisco</a>
+                <a href="#" class="cl-link">washington</a> &gt;
+                <a href="#" class="cl-link">olympia</a>
             </p>
         </div>
     </div>
@@ -116,7 +179,7 @@
                 <div class="cl-breadcrumb">
                     <a href="#">craigslist</a>
                     <span>&gt;</span>
-                    <a href="#">san francisco</a>
+                    <a href="#">olympia</a>
                     <span>&gt;</span>
                     <span>for sale</span>
                 </div>
