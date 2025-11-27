@@ -4,6 +4,12 @@ A Tailwind CSS theme that captures the Craigslist aesthetic.
 
 No fancy gradients, no smooth animations, no rounded corners. Just pure, functional web design.
 
+## Live Demo
+
+View the live demo: https://brittonhayes.github.io/craigslist-css/
+
+See all components and utilities in action with a fully-styled Craigslist-inspired interface.
+
 ## Installation
 
 Configure npm to use GitHub Packages for the @brittonhayes scope. Create or edit .npmrc in your project:
