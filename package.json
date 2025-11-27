@@ -1,12 +1,13 @@
 {
-  "name": "craigslist-css",
+  "name": "@brittonhayes/craigslist-css",
   "version": "1.0.0",
   "description": "A Tailwind CSS theme that captures the iconic Craigslist aesthetic",
   "main": "tailwind.config.js",
   "scripts": {
     "build": "tailwindcss -i ./src/input.css -o ./dist/output.css",
     "build:watch": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
-    "build:minify": "tailwindcss -i ./src/input.css -o ./dist/output.min.css --minify"
+    "build:minify": "tailwindcss -i ./src/input.css -o ./dist/output.min.css --minify",
+    "prepublishOnly": "npm run build && npm run build:minify"
   },
   "keywords": [
     "tailwind",
@@ -18,8 +19,19 @@
     "nostalgic",
     "y2k"
   ],
-  "author": "Craigslist Design Team",
+  "author": "Britton Hayes <britton@brittonhayes.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brittonhayes/craigslist-css.git"
+  },
+  "bugs": {
+    "url": "https://github.com/brittonhayes/craigslist-css/issues"
+  },
+  "homepage": "https://github.com/brittonhayes/craigslist-css#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "devDependencies": {
     "tailwindcss": "^3.4.0"
   },

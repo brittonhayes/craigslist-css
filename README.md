@@ -1,5 +1,9 @@
 # craigslist-css
 
+[![CI](https://github.com/brittonhayes/craigslist-css/actions/workflows/ci.yml/badge.svg)](https://github.com/brittonhayes/craigslist-css/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![npm version](https://img.shields.io/github/package-json/v/brittonhayes/craigslist-css)](https://github.com/brittonhayes/craigslist-css/packages)
+
 > A Tailwind CSS theme that captures the iconic Craigslist aesthetic
 
 Transform any website into a nostalgic masterpiece of utilitarian web design. No fancy gradients, no smooth animations, no rounded corners—just pure, unadulterated early-2000s functionality.
@@ -17,16 +21,30 @@ Transform any website into a nostalgic masterpiece of utilitarian web design. No
 
 ## Installation
 
-### Via NPM
+### Via GitHub Packages
+
+First, configure npm to use GitHub Packages for the `@brittonhayes` scope. Create or edit `.npmrc` in your project:
+
+```
+@brittonhayes:registry=https://npm.pkg.github.com
+```
+
+Then install the package:
+
+```bash
+npm install @brittonhayes/craigslist-css
+```
+
+### Via NPM (Coming Soon)
 
 ```bash
 npm install craigslist-css
 ```
 
-### Via CDN (Coming Soon)
+### Via CDN
 
 ```html
-<link href="https://unpkg.com/craigslist-css/dist/output.min.css" rel="stylesheet">
+<link href="https://unpkg.com/@brittonhayes/craigslist-css/dist/output.min.css" rel="stylesheet">
 ```
 
 ## Quick Start
@@ -261,7 +279,14 @@ In a world of over-designed, JavaScript-heavy, CPU-melting web applications, som
 
 ## Contributing
 
-Found a way to make it even more utilitarian? Submit a PR!
+Found a way to make it even more utilitarian? We'd love your help! Check out our [Contributing Guide](CONTRIBUTING.md) for details on:
+
+- Setting up your development environment
+- Our design philosophy and guidelines
+- How to submit pull requests
+- Reporting issues
+
+All contributions should maintain the minimalist, utilitarian aesthetic that makes Craigslist iconic.
 
 ## License
 
@@ -269,7 +294,9 @@ MIT License - Use it however you want
 
 ## Credits
 
-Inspired by the timeless design of Craigslist.org, a website that has remained functionally perfect since 1995.
+Inspired by the timeless design of [Craigslist.org](https://craigslist.org), a website that has remained functionally perfect since 1995.
+
+**Note:** This project is not affiliated with or endorsed by Craigslist. It's a loving tribute to their iconic design aesthetic.
 
 ## FAQ
 
@@ -290,6 +317,6 @@ A: You can, but why would you want to?
 
 ---
 
-Made with 💙 by the Craigslist Design Team (fictional)
+Made with 💙 by [Britton Hayes](https://github.com/brittonhayes)
 
 *"Don't fix what isn't broken."* - Craig Newmark (probably)
